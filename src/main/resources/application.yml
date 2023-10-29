@@ -1,0 +1,21 @@
+logging:
+  pattern:
+    console: "%clr(%d{HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:%5p}) %clr(---){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=problemz
+    username: prudhvitej
+    password: admin@123
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+
+#dgs:
+#  graphql:
+#    schema-locations:
+#      - classpath*:schema/**/*.graphql
+#      - classpath*:schema/**/*.gql
